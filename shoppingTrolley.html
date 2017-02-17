@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/TB1_oz6GVXXXXaFXpXXJDFnIXXX-64-64.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper-3.3.1.jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <title>商城</title>
+</head>
+<body>
+    <header>
+        <div class="lay-top-menu-con">
+            <div class="lay-content clear">
+                <img class="lay-logo" src="images/logo.png" alt="">
+                <ul class="lay-menu clear">
+                    <li><a href="javascript:;">购物车</a></li>
+                </ul>
+                <ul class="lay-icon-menu clear dat-icon-menu">
+                    <li class="icon iconfont icon-sousuo dat-icon-menu-btn"></li>
+                    <li class="icon iconfont icon-yonghu dat-icon-menu-btn"></li>
+                    <li class="icon iconfont icon-gouwuche"></li>
+                    <li class="icon iconfont icon-caidan"></li>
+                </ul>
+                <p class="lay-shopping-statistics">共计<span>10</span>件商品，已选择<span>1</span>件，共计<span>200</span>元<a href="javascript:;" class="lay-gotopay">去结算</a></p>
+            </div>
+        </div>
+    </header> 
+    <ul class="lay-back-menu dat-back-menu hide">
+        <li class="hide">
+            <div class="lay-search clear">
+                <input class="lay-search-input dat-search-input" type="search" palceholder="冬装">
+                <input class="lay-search-button" type="button">
+            </div>
+        </li>
+        <li class="hide">
+            <div class="lay-sign">
+                <label for="dat-account">账号：<input id="dat-account" type="text" placeholder="请输入账号"></label>
+                <label for="dat-password">密码：<input id="dat-password" type="text" placeholder="请输入密码"></label>
+                <input class="lay-sign-btn" type="button" value="登录">
+                <p class="lay-register"><a>注册</a>|<a>找回密码</a></p>
+            </div>
+        </li>
+    </ul> 
+    <div class="lay-banner swiper-container clear">
+        <ul class="swiper-wrapper clear">
+            <li class="swiper-slide">
+                <a class="lay-center-img-con" href="">
+                    <img src="images/banner_1.jpg" alt="">
+                </a>
+            </li>
+            <li class="swiper-slide">
+                <a class="lay-center-img-con" href="">
+                    <img src="images/banner_2.jpg" alt="">
+                </a>
+            </li>
+            <li class="swiper-slide">
+                <a class="lay-center-img-con" href="">
+                    <img src="images/banner_3.jpg" alt="">
+                </a>
+            </li>
+            <li class="swiper-slide">
+                <a class="lay-center-img-con" href="">
+                    <img src="images/banner_4.jpg" alt="">
+                </a>
+            </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <script>        
+        var mySwiper = new Swiper ('div.swiper-container.lay-banner', {
+            autoplay:3000,
+            loop: true,
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            autoplayDisableOnInteraction : false
+        })        
+    </script>
+    <div class="lay-content lay-main-content">
+        <select name="" id="">
+            <option value="地址1">地址1</option>
+            <option value="地址2">地址2</option>
+        </select>   
+        <table class="lay-shop-title">
+            <tr>
+                <th>
+                    <input class="dat-select-all" type="checkbox">
+                </th>
+                <th>全选</th>
+            </tr>
+        </table>
+        <div class="lay-shop-name">
+            <input class="inline-block-middle dat-select-shop" type="checkbox">
+            <img class="inline-block-middle" width="14px" height="14px" src="images/logo.png" alt="">
+            <span class="inline-block-middle">店铺：<span>形色服饰专营店</span></span>            
+        </div>
+        <table class="lay-order">
+            <tr>
+                <td>
+                    <input class="dat-select-order" type="checkbox">
+                </td>
+                <td>
+                    <img class="lay-order-img" src="images/pro_1.jpg" alt="">
+                </td>
+                <td class="lay-order-name">七匹狼真皮男包单肩包男斜挎包休闲商务公文包男士包包牛皮背包</td>
+                <td class="lay-order-description">颜色分类：款二&nbsp;竖款啡色大号（240*55*270）</td>
+                <td>
+                    <p class="lay-original-price">¥629.00</p>
+                    <p class="">¥319.00</p>
+                </td>
+                <td>
+                    <input class="lay-icon-btn dat-subtract" type="button" value="-"><input class="lay-order-num dat-order-num" type="text" value="1"><input class="lay-icon-btn dat-add" type="button" value="+"><!--inline-block有间隔，一种解决方法是让他们连在一起写-->
+                </td>
+                <td>¥319.00</td>
+                <td class="lay-order-operation">
+                    <a href="javascript:;">移入收藏夹</a><br>
+                    <a href="javascript:;">删除</a>
+                </td>
+            </tr>
+        </table>
+        <table class="lay-order">
+            <tr>
+                <td>
+                    <input class="dat-select-order" type="checkbox">
+                </td>
+                <td>
+                    <img class="lay-order-img" src="images/pro_2.jpg" alt="">
+                </td>
+                <td class="lay-order-name">七匹狼真皮男包单肩包男斜挎包休闲商务公文包男士包包牛皮背包</td>
+                <td class="lay-order-description">颜色分类：款二&nbsp;竖款啡色大号（240*55*270）</td>
+                <td>
+                    <p class="lay-original-price">¥629.00</p>
+                    <p class="">¥319.00</p>
+                </td>
+                <td>
+                    <input class="lay-icon-btn dat-subtract" type="button" value="-"><input class="lay-order-num dat-order-num" type="text" value="1"><input class="lay-icon-btn dat-add" type="button" value="+"><!--inline-block有间隔，一种解决方法是让他们连在一起写-->
+                </td>
+                <td>¥319.00</td>
+                <td class="lay-order-operation">
+                    <a href="javascript:;">移入收藏夹</a><br>
+                    <a href="javascript:;">删除</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <footer>精品商城</footer>
+</body>
+</html>
